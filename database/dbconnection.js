@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 
 const dbConnection = async () => {
     try {
-        await mongoose.connect( "mongodb+srv://itsboiii:ZrJa1SeC7hFD3NHM@job.lohqtdu.mongodb.net/?retryWrites=true&w=majority", {
+        await mongoose.connect( "mongodb+srv://itsboiii:ZrJa1SeC7hFD3NHM@job.lohqtdu.mongodb.net/", {
             dbName: "MERN_STACK_JOB_SEEKING",
             
         });
