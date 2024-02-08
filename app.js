@@ -23,6 +23,7 @@ app.use(cors({
     method: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
 }));
+console.log(process.env.FRONTEND_URL);
 
 app.options('*', cors());
 

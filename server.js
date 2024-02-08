@@ -15,8 +15,8 @@ cloudinary.v2.config( {
   api_secret: process.env.CLOUDINARY_CLINT_SECRET
 } );
 
-app.listen( process.env.PORT || 4000, () => {
-  console.log( 'Server listening on port 4000 ' );
-} );
+// app.listen( process.env.PORT || 4000, () => {
+//   console.log( 'Server listening on port 4000 ' );
+// } );
 
 
