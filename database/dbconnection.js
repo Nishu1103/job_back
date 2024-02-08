@@ -1,9 +1,10 @@
 import mongoose from "mongoose";
 import dotenv from "dotenv";
+dotenv.config({ path: "./config/config.env "});
 
 const dbConnection = async () => {
     try {
-        await mongoose.connect( "mongodb+srv://itsboiii:ZrJa1SeC7hFD3NHM@job.lohqtdu.mongodb.net/", {
+        await mongoose.connect( process.env.MONGO_URL, {
             dbName: "MERN_STACK_JOB_SEEKING",
             
         });
